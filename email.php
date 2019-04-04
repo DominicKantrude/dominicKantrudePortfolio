@@ -1,7 +1,7 @@
 <?php
 
 $errors = '';								/*==================================*/
-$myemail = 'dominic.w.kantrude@gmail.com';		//Put Your email address here.
+$myemail = 'www.dominic.w.kantrude@gmail.com';		//Put Your email address here.
 if(empty($_POST['name'])  ||				/*==================================*/
    empty($_POST['email']) ||
    empty($_POST['subject']) ||
@@ -29,7 +29,7 @@ if( empty($errors))
 	$email_body = "You have received a new message from: $first".
 	" Here are the details:\n $message";
 															/*==========================================*/
-	$headers = "From: Runaway <dominickantrude.com>\n";  	// Type here where the message has came from
+	$headers = "From: Runaway <www.dominickantrude.com>\n";  	// Type here where the message has came from
 	$headers .= "Reply-To: $email_address";					/*==========================================*/
 
 	$send = mail($to,$email_subject,$email_body,$headers);
